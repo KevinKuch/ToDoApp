@@ -1,0 +1,52 @@
+.Tache {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    border-bottom: 1px dotted #666;
+    height: 60px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 300;
+    flex: 1 0 auto;
+
+    
+    li {
+        list-style: none;
+        width: 45%;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    p {
+        width: 55%;
+        text-align: left;
+    }
+
+    .tacheFait, .tacheNonFait {
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .tacheFait {
+        text-decoration: line-through;
+        opacity: 0.5;
+      }
+      
+      .tacheNonFait {
+        text-decoration: none;
+        opacity: 1;
+      }
+      
+      
+    
+    @media screen and (min-width:768px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width:1024px) {
+        font-size: 2rem;
+    }
+        
+    
+}
